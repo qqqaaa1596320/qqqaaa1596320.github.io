@@ -3,7 +3,7 @@ ini_set('error_reporting', E_ALL);
 $botToken = "227903728:AAEFhGZ1CfzCn_IMDg1MsMCxd__iF4bryx0";
 $website = "https://api.telegram.org/bot".$botToken;
 
-$update = file_get_contents('php://input');
+$update = file_get_contents("php://input");
 
 $update = json_decode($update, TRUE);
 
@@ -26,7 +26,7 @@ switch ($message) {
 }
 function sendMessage($chatId,$message){
 
-	$url = "https://api.telegram.org/bot227903728:AAEFhGZ1CfzCn_IMDg1MsMCxd__iF4bryx0/sendMessage?chat_id=".$chatId."&text=fa";
+	$url = "https://api.telegram.org/bot227903728:AAEFhGZ1CfzCn_IMDg1MsMCxd__iF4bryx0/sendmessage?chat_id=".$chatId."&text=fa";
 	file_get_contents($url);
 }
 
