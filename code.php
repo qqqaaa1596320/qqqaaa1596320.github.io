@@ -26,7 +26,7 @@ switch ($message) {
 }
 function sendMessage($chatId,$message){
 
-	$url = "https://api.telegram.org/bot".$botToken."/sendMessage?chat_id=".$chatId."&text=fa";
+	$url = "https://api.telegram.org/bot227903728:AAEFhGZ1CfzCn_IMDg1MsMCxd__iF4bryx0/sendMessage?chat_id=".$chatId."&text=fa";
 	file_get_contents($url);
 }
 
