@@ -10,7 +10,7 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
-print_r( "fas");
+echo "fas";
 
 $text = $updateArray["result"][0]["message"]["text"];
 sendMessage($chatId,"test");
